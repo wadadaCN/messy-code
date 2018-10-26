@@ -9,7 +9,7 @@ for n in range(10000):
         if r not in door:
             door.append(r)
 
-    goat = door[random.randint(0, 2)]
+    goat = door[0]
     choose = door[random.randint(0, 2)]
 
     temp = copy.deepcopy(door)
