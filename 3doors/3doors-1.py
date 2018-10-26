@@ -18,9 +18,11 @@ for n in range(10000):
     excludei = random.randint(0, 1)
 
     if goat == temp[excludei]:
-        door.pop(temp[1 - excludei])
-        
+        door.remove(temp[1 - excludei])
+    else:
+        door.remove(temp[excludei])
+
     if goat == choose:
         true += 1
-        
+
 print(true)
